@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+</head>
+
+<body>
+<div class="registration-container">
+    <h1 class="registration-title">Register</h1>
+    <form id="registration-form">
+        <label for="userName" class="form-label">
+            <input type="text" name="userName" id="userName" class="form-input" placeholder="User Name">
+            <span id="userName-error" class="error"></span>
+        </label>
+
+        <label for="email" class="form-label">
+            <input type="email" name="email" id="email" class="form-input" placeholder="Email">
+            <span id="email-error" class="error"></span>
+        </label>
+
+        <label for="password" class="form-label">
+            <input type="password" name="password" id="password" class="form-input" placeholder="Password">
+            <span id="password-error" class="error"></span>
+        </label>
+
+        <input type="submit" class="form-submit" value="Register" />
+    </form>
+
+    <div id="success-message" class="success-message"></div>
+
+    <p class="register-link">
+        <a class="a_href" href="/users/login">Login </a>
+    </p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="/javascripts/registration.js"></script>
+</body>
+
+</html>
